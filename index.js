@@ -10,6 +10,9 @@ app.set('view engine', 'pug')
 //encontrara todoas las vistas en views
 app.set('views, ', './views')
 
+//carpeta publica de manera estatica contenedor
+app.use( express.static('public'))
+
 //app.get('/', userRoutes) //se limita a un get o sea a la ruta por defecto
 
 app.use('/auth', userRoutes)//middleware de express cada que visitas se va ejecutando buscando la ruta correcta
