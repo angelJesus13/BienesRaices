@@ -1,0 +1,29 @@
+{
+  "name": "bienesraices",
+  "version": "1.0.0",
+  "description": "v.1.0 Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelJesus13/BienesRaices.git"
+  },
+  "keywords": [
+    "MVC",
+    "Pug",
+    "Tailwind",
+    "MySQL",
+    "Sequelize"
+  ],
+  "author": "T.S.U Angel de Jesus Baños Tellez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelJesus13/BienesRaices/issues"
+  },
+  "homepage": "https://github.com/angelJesus13/BienesRaices#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
