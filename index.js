@@ -1,9 +1,18 @@
 //type module usando import
 import express from 'express';
 import userRoutes from './routes/userRoutes.js'
+import db from './config/db.js'
 
 //creamos la app
 const app = express();
+
+//conexion a la Base De datos
+try{
+    await db.authenticate();
+    console.log('Conexion Correcta a la Base de Datos')
+}catch{
+    console.log('error')
+}
 
 //habilitamos un template engine pug
 app.set('view engine', 'pug')
