@@ -1,2 +1,27 @@
-div 
-    h2.text-center Crea tu cuenta 
+extends ../layout/index
+block contenido 
+
+    .py-10 
+        h1.text-5xl.my-10.font-extrabold.text-center Bienes 
+            span.font-normal.text-green-700 Raíces 
+        h2.text-center.font-extrabold.text-2xl Crea tu cuenta 
+        //formulario
+        .mt-8.mx-auto.max-w-md
+            .bg-gradient-to-t.from-green-400.to-green-600.py-8.px-4.shadow
+                form.space-y-5 
+                    div 
+                        label.block.text-sm.uppercase.text-white.mb-4.font-bold(for="nombre") Tu Nombre
+                        input#nombre.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-green-700(placeholder="Tu nombre" type="text" name="nombre")
+                    div 
+                        label.block.text-sm.uppercase.text-white.mb-4.font-bold(for="correo") Tu Correo Electronico
+                        input#nombre.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-green-700(placeholder="Tu Correo" type="email" name="correo")   
+                    div 
+                        label.block.text-sm.uppercase.text-white.mb-3.font-bold(for="contraseña") Tu Contraseña
+                        input#nombre.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-green-700(placeholder="Tu Contraseña 6 caracteres" type="password" name="contraseña")
+                    div 
+                        label.block.text-sm.uppercase.text-white.mb-3.font-bold(for="contraseña") Repetir Contraseña
+                        input#nombre.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-green-700(placeholder="Repite tu Contraseña" type="password" name="repetir contraseña")
+                    .flex.items-center.justify-between 
+                        a(class="text-gray text-xs hover:text-white" href="/auth/login") ¿Ya tienes Cuenta? Inicia Sesion
+                        a(class="text-gray text-xs hover:text-white" href="/auth/forget-password") Olvide mi Contraseña
+                    input(class="w-full bg-gradient-to-r from-gray-500 to-gray-900 hover:text-white font-bold py-3 cursor-pointer text-gray-300 transition-colors hover:scale-105" type="submit" value="Crear Cuenta")
